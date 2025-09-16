@@ -1,5 +1,6 @@
 from collections import deque
 
+
 def bfs(grafo, inicio, objetivo):
     """Busca em Largura (BFS)"""
     visitados = set()
@@ -20,6 +21,7 @@ def bfs(grafo, inicio, objetivo):
                 fila.append(novo_caminho)
 
     return None
+
 
 def dfs(grafo, inicio, objetivo, caminho=None, visitados=None):
     """Busca em Profundidade (DFS)"""
@@ -42,6 +44,7 @@ def dfs(grafo, inicio, objetivo, caminho=None, visitados=None):
 
     return None
 
+
 def dls(grafo, no, objetivo, profundidade, caminho, visitados):
     """Busca em Profundidade Limitada (DLS)"""
     if profundidade == 0 and no == objetivo:
@@ -50,19 +53,21 @@ def dls(grafo, no, objetivo, profundidade, caminho, visitados):
         for vizinho in grafo[no]:
             if vizinho not in visitados:
                 visitados.add(vizinho)
-                resultado = dls(grafo, vizinho, objetivo, profundidade-1, caminho+[vizinho], visitados)
+                resultado = dls(grafo, vizinho, objetivo, profundidade - 1, caminho + [vizinho], visitados)
                 if resultado:
                     return resultado
     return None
 
+
 def iddfs(grafo, inicio, objetivo, profundidade_max=10):
     """Busca em Profundidade Iterativa (IDDFS)"""
     for profundidade in range(profundidade_max):
-        visitados = set([inicio])
+        visitados = {inicio}
         resultado = dls(grafo, inicio, objetivo, profundidade, [inicio], visitados)
         if resultado:
             return resultado
     return None
+
 
 if __name__ == "__main__":
     grafo = {
