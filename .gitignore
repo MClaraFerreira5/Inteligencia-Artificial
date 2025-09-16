@@ -1,2 +1,21 @@
-CMakeLists.txt
-main.exe
+# PyCharm
+.idea/
+__pycache__/
+*.pyc
+*.pyo
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python virtualenvs
+venv/
+.env/
+.venv/
+
+# CLion
+cmake-build-debug/
+*.iml
