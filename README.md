@@ -9,3 +9,4 @@ Autores: **Yann K. J. Leão** e **Maria Clara da Silva Ferreira**  — Engenhari
 Cada pasta contém uma atividade, com explicações teóricas e implementações em Python/Jupyter Notebook e C++.
 
 - [Problemas de Busca](./problema_busca)
+- [Árvores de Decisão e Floresta Aleatória](./arvores_e_florestas)
