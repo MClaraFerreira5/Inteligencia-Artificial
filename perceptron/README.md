@@ -46,7 +46,7 @@ Codificação utilizada:
 ### Abrir o notebook
 
 ```bash
-jupyter notebook perceptron_treino.ipynb
+jupyter notebook main.ipynb
 ````
 
 ## Geração automática do arquivo de log
