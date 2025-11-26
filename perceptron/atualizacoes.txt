@@ -1,0 +1,31 @@
+Pesos iniciais: [0.0, 0.0, 0.0]
+
+=== ÉPOCA 1 ===
+Exemplo 1: x=[1.0, 0.0, 0.0], y=-1, y_pred=-1, update=0.0
+  Pesos antes: [0.0, 0.0, 0.0]
+  Nenhuma atualização (update=0)
+Exemplo 2: x=[1.0, 0.0, 1.0], y=-1, y_pred=-1, update=0.0
+  Pesos antes: [0.0, 0.0, 0.0]
+  Nenhuma atualização (update=0)
+Exemplo 3: x=[1.0, 1.0, 0.0], y=1, y_pred=-1, update=0.2
+  Pesos antes: [0.0, 0.0, 0.0]
+  Pesos depois: [0.2, 0.2, 0.0]
+Exemplo 4: x=[1.0, 1.0, 1.0], y=1, y_pred=1, update=0.0
+  Pesos antes: [0.2, 0.2, 0.0]
+  Nenhuma atualização (update=0)
+
+=== ÉPOCA 2 ===
+Exemplo 1: x=[1.0, 0.0, 0.0], y=-1, y_pred=1, update=-0.2
+  Pesos antes: [0.2, 0.2, 0.0]
+  Pesos depois: [0.0, 0.2, 0.0]
+Exemplo 2: x=[1.0, 0.0, 1.0], y=-1, y_pred=-1, update=0.0
+  Pesos antes: [0.0, 0.2, 0.0]
+  Nenhuma atualização (update=0)
+Exemplo 3: x=[1.0, 1.0, 0.0], y=1, y_pred=1, update=0.0
+  Pesos antes: [0.0, 0.2, 0.0]
+  Nenhuma atualização (update=0)
+Exemplo 4: x=[1.0, 1.0, 1.0], y=1, y_pred=1, update=0.0
+  Pesos antes: [0.0, 0.2, 0.0]
+  Nenhuma atualização (update=0)
+
+Pesos finais: [0.0, 0.2, 0.0]
