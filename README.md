@@ -10,3 +10,4 @@ Cada pasta contém uma atividade, com explicações teóricas e implementações
 
 - [Problemas de Busca](./problema_busca)
 - [Árvores de Decisão e Floresta Aleatória](./arvores_e_florestas)
+- [Implementação do Perceptron](./perceptron)
